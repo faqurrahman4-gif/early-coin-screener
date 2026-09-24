@@ -98,12 +98,20 @@ TEKS DOKUMEN:
 
 
 def _call_gemini(prompt: str) -> str:
-    """Panggilan REST langsung ke Gemini API — tanpa SDK tambahan."""
+    """Panggilan REST langsung ke Gemini API — tanpa SDK tambahan.
+
+    PENTING: API key dikirim lewat HTTP header (x-goog-api-key), BUKAN lewat
+    URL query param. Kalau key ada di URL, ada risiko dia ikut ke-log atau
+    ke-simpan utuh di pesan error (persis insiden yang pernah terjadi —
+    GitHub Push Protection sampai menolak commit karena mendeteksi key
+    ke-expose di data/snapshots.json). Header tidak pernah muncul di URL
+    sehingga tidak ikut ke pesan error requests/exception.
+    """
     api_key = os.environ.get("GEMINI_API_KEY")
     url = f"{config.GEMINI_API_BASE}/models/{config.GEMINI_MODEL}:generateContent"
     resp = requests.post(
         url,
-        params={"key": api_key},
+        headers={"x-goog-api-key": api_key, "Content-Type": "application/json"},
         json={
             "contents": [{"parts": [{"text": prompt}]}],
             "generationConfig": {"response_mime_type": "application/json"},
@@ -113,6 +121,21 @@ def _call_gemini(prompt: str) -> str:
     resp.raise_for_status()
     data = resp.json()
     return data["candidates"][0]["content"]["parts"][0]["text"]
+
+
+def _safe_error_message(e: Exception) -> str:
+    """Pesan error yang aman disimpan ke data/snapshots.json — TIDAK PERNAH
+    menyertakan str(e) mentah, karena exception dari requests/HTTP bisa
+    membawa URL lengkap (berpotensi berisi API key) atau detail teknis lain
+    yang tidak seharusnya tersimpan permanen di file yang di-commit ke repo
+    publik. Cukup nama jenis error + kode status kalau ada, tanpa detail
+    lengkapnya.
+    """
+    error_type = type(e).__name__
+    status_code = getattr(getattr(e, "response", None), "status_code", None)
+    if status_code:
+        return f"Gagal memanggil Gemini API ({error_type}, HTTP {status_code})"
+    return f"Gagal memanggil Gemini API ({error_type})"
 
 
 def score_qualitative_factors(document_text: str) -> dict:
@@ -126,9 +149,10 @@ def score_qualitative_factors(document_text: str) -> dict:
     try:
         raw_text = _call_gemini(prompt)
     except Exception as e:
+        safe_msg = _safe_error_message(e)
         return {
-            "tokenomics": {"skor_0_20": 0, "alasan": f"Gagal memanggil Gemini API: {e}"},
-            "utilitas": {"skor_0_20": 0, "alasan": f"Gagal memanggil Gemini API: {e}"},
+            "tokenomics": {"skor_0_20": 0, "alasan": safe_msg},
+            "utilitas": {"skor_0_20": 0, "alasan": safe_msg},
             "confidence": "rendah",
             "data_tidak_ditemukan": ["api_error"],
         }
