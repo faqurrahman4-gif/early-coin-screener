@@ -49,6 +49,18 @@ GECKOTERMINAL_BASE = "https://api.geckoterminal.com/api/v2"  # gratis, cloud, ta
 # Tambah/kurangi sesuai chain yang relevan untuk riset kamu.
 NETWORKS_TO_SCAN = ["eth", "solana", "base", "arbitrum", "bsc"]
 
+# GeckoTerminal free/tanpa-key API dibatasi maksimal 10 halaman per endpoint
+# (20 pool/halaman = 200 pool/network). Paket berbayar bisa lebih, tapi kita
+# tetap di jalur gratis.
+MAX_PAGES_FREE_TIER = 10
+
+# Lokasi "candidate journal" — daftar pool yang pernah terlihat sebagai
+# "pool baru" (dari endpoint new_pools), disimpan terus supaya begitu
+# umurnya masuk 3-13 bulan di kemudian hari, otomatis kepanggil lagi
+# untuk di-scoring. Ini investasi jangka panjang: makin lama screener
+# jalan, makin lengkap coverage-nya.
+CANDIDATE_JOURNAL_PATH = "data/candidate_journal.json"
+
 # Mapping id network GeckoTerminal -> id platform CoinGecko
 # (dipakai untuk resolve contract address -> CoinGecko id)
 GECKOTERMINAL_TO_COINGECKO_PLATFORM = {
