@@ -175,6 +175,42 @@ def run_token_pipeline(token_config: dict) -> dict:
         has_public_explorer=token_config.get("has_public_explorer", True),
     )
 
+    # --- Narasi "kenapa token ini masuk radar" ---
+    # Digabung dari 2 sumber: (a) angka kuantitatif yang SUDAH kita tarik di
+    # atas (bukan ditebak ulang), dan (b) narasi kualitatif dari LLM kalau
+    # ada whitepaper yang berhasil dibaca. Field yang datanya tidak tersedia
+    # ditulis apa adanya (None/"tidak diketahui"), TIDAK diisi tebakan.
+    llm_profile = llm_output.get("profil_proyek") or {}
+    why_on_radar = {
+        # --- fakta kuantitatif (dari API, bukan LLM) ---
+        "market_cap_usd": market.get("market_cap_usd"),
+        "rank_kategori": market.get("market_cap_rank"),
+        "total_kompetitor_sekategori": max(len(competitors), 1) if category else None,
+        "revenue_tahunan_estimasi_usd": annualized_revenue or None,
+        "tvl_usd": (data_sources.get_protocol_tvl(defillama_slug) or {}).get("tvl") if defillama_slug else None,
+        "network": token_config.get("network"),
+        "contract_address": token_config.get("explorer_contract"),
+        # --- narasi kualitatif (dari LLM baca whitepaper, bisa null kalau whitepaper tidak ketemu) ---
+        "ringkasan": llm_profile.get("ringkasan"),
+        "mekanisme_kerja": llm_profile.get("mekanisme_kerja"),
+        "keunggulan": llm_profile.get("keunggulan", []),
+        "kelemahan_atau_risiko": llm_profile.get("kelemahan_atau_risiko", []),
+        "keunikan": llm_profile.get("keunikan"),
+        "tim_atau_backer_disebutkan": llm_profile.get("tim_atau_backer_disebutkan"),
+        # --- proxy holder concentration (BUKAN institusi vs retail — itu
+        # tidak bisa didapat gratis & akurat untuk token kecil/baru) ---
+        "top10_wallet_konsentrasi_pct": token_config.get("top10_wallet_voting_power_pct"),
+        "catatan": (
+            "Breakdown holder institusi vs retail TIDAK tersedia lewat API gratis "
+            "untuk token seukuran ini — kalau butuh data ini, harus riset manual "
+            "langsung ke block explorer atau laporan proyek."
+            if llm_profile else
+            "Whitepaper/docs resmi tidak berhasil ditemukan/dibaca — profil proyek "
+            "ini masih kosong. Isi 'whitepaper_urls' di MANUAL_OVERRIDES untuk token "
+            "ini supaya narasinya lengkap."
+        ),
+    }
+
     factor_scores = {
         "value_accrual": f1["skor"],
         "revenue": f2["skor"],
@@ -219,6 +255,9 @@ def run_token_pipeline(token_config: dict) -> dict:
         factor_breakdowns=factor_breakdowns,
         confidence=confidence,
         total_score=total,
+        network=token_config.get("network"),
+        contract_address=token_config.get("explorer_contract"),
+        why_on_radar=why_on_radar,
     )
 
     return {
@@ -230,4 +269,5 @@ def run_token_pipeline(token_config: dict) -> dict:
         "confidence": confidence,
         "total": total,
         "missing_manual_data": missing_manual,
+        "why_on_radar": why_on_radar,
     }

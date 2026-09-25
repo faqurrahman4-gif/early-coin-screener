@@ -50,8 +50,11 @@ def scrape_docs_text(url: str) -> str | None:
 RUBRIC_PROMPT = """Kamu adalah analis tokenomik yang menilai dokumen resmi
 sebuah proyek crypto (whitepaper/docs/tokenomics page). Baca teks di bawah,
 lalu isi rubrik berikut SEOBJEKTIF mungkin berdasarkan fakta yang benar-benar
-tertulis. Jangan menebak angka yang tidak disebutkan — kalau tidak ada,
-tulis null dan turunkan confidence.
+tertulis. Jangan menebak angka atau fakta yang tidak disebutkan — kalau tidak
+ada, tulis null (untuk field string/angka) atau [] (untuk list) dan turunkan
+confidence. AturAN PALING PENTING: JANGAN MENGARANG. Kalau whitepaper tidak
+menyebutkan siapa tim/backer proyek, tulis null — JANGAN menebak nama VC atau
+orang terkenal manapun.
 
 RUMUS SKOR YANG HARUS KAMU IKUTI:
 
@@ -85,6 +88,15 @@ Jawab HANYA dalam format JSON valid, tanpa teks lain, dengan struktur:
     "use_case_wajib_ditemukan": [<string>, ...],
     "use_case_opsional_ditemukan": [<string>, ...],
     "alasan": "<ringkas, 2-3 kalimat>"
+  },
+  "profil_proyek": {
+    "ringkasan": "<2-3 kalimat: proyek ini apa/untuk apa>",
+    "mekanisme_kerja": "<ringkas: bagaimana produk/protokol ini bekerja secara teknis>",
+    "keunggulan": [<string singkat>, ...],
+    "kelemahan_atau_risiko": [<string singkat>, ...],
+    "keunikan": "<1-2 kalimat: apa yang membedakan dari kompetitor, atau null kalau tidak jelas>",
+    "tim_atau_backer_disebutkan": [<nama tim/investor/VC PERSIS seperti tertulis di dokumen>, ...] ATAU null kalau tidak disebutkan sama sekali,
+    "catatan_kejujuran_data": "<sebutkan bagian mana dari profil ini yang confidence-nya rendah/tidak ditemukan di dokumen>"
   },
   "confidence": "tinggi/sedang/rendah",
   "data_tidak_ditemukan": [<string>, ...]
@@ -153,6 +165,7 @@ def score_qualitative_factors(document_text: str) -> dict:
         return {
             "tokenomics": {"skor_0_20": 0, "alasan": safe_msg},
             "utilitas": {"skor_0_20": 0, "alasan": safe_msg},
+            "profil_proyek": None,
             "confidence": "rendah",
             "data_tidak_ditemukan": ["api_error"],
         }
@@ -164,6 +177,7 @@ def score_qualitative_factors(document_text: str) -> dict:
         return {
             "tokenomics": {"skor_0_20": 0, "alasan": "Gagal parse output LLM"},
             "utilitas": {"skor_0_20": 0, "alasan": "Gagal parse output LLM"},
+            "profil_proyek": None,
             "confidence": "rendah",
             "data_tidak_ditemukan": ["parse_error"],
             "_raw_output": raw_text,

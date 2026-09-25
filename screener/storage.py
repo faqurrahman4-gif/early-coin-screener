@@ -31,19 +31,24 @@ def _save_all(snapshots: list[dict]):
 
 def save_snapshot(token_symbol: str, coingecko_id: str, defillama_slug: str,
                    age_days: int, factor_scores: dict, factor_breakdowns: dict,
-                   confidence: dict, total_score: dict):
+                   confidence: dict, total_score: dict,
+                   network: str | None = None, contract_address: str | None = None,
+                   why_on_radar: dict | None = None):
     snapshots = _load_all()
     snapshots.append({
         "run_timestamp": datetime.now(timezone.utc).isoformat(),
         "token_symbol": token_symbol,
         "coingecko_id": coingecko_id,
         "defillama_slug": defillama_slug,
+        "network": network,
+        "contract_address": contract_address,
         "age_days": age_days,
         "total_skor_0_20": total_score["total_skor_0_20"],
         "total_skor_persen": total_score["total_skor_persen"],
         "factor_scores": factor_scores,
         "factor_breakdown": factor_breakdowns,
         "confidence": confidence,
+        "why_on_radar": why_on_radar or {},
     })
     _save_all(snapshots)
 
