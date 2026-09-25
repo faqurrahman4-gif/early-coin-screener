@@ -1,0 +1,402 @@
+{
+  "eth:0x4ace2a6c0c9afe6b500a22ac41ad446e78fa79f5": {
+    "network": "eth",
+    "pool_address": "0x6ca689998faec8606a61fbf4763904ed1a37c235",
+    "pool_created_at": "2026-09-25T07:18:23Z",
+    "base_token_symbol": "BCC",
+    "base_token_address": "0x4ace2a6c0c9afe6b500a22ac41ad446e78fa79f5",
+    "volume_24h_usd": "605.0169978703",
+    "reserve_usd": "23603.6566",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "eth:0xfef1c01ff0e67039b7e6b1e8ed0bb17b6e055f99": {
+    "network": "eth",
+    "pool_address": "0xf50de8969a16abfac3c5ecd51024933cba03115e82175376ed2dfa03070ed785",
+    "pool_created_at": "2026-09-25T07:07:47Z",
+    "base_token_symbol": "CALI",
+    "base_token_address": "0xfef1c01ff0e67039b7e6b1e8ed0bb17b6e055f99",
+    "volume_24h_usd": "3252.7533629753",
+    "reserve_usd": "12906.5759",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "eth:0xa041541d091c0035a35d665caf5f3d2fe9a14c27": {
+    "network": "eth",
+    "pool_address": "0xdd9af86a30bc0c463ecc08c2cdb6dd9ee1e6b57ae5ea59d6198daaa00bcc947a",
+    "pool_created_at": "2026-09-25T07:07:23Z",
+    "base_token_symbol": "LONDON",
+    "base_token_address": "0xa041541d091c0035a35d665caf5f3d2fe9a14c27",
+    "volume_24h_usd": "13.1996905458",
+    "reserve_usd": null,
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "eth:0x0ee28d87ba78fd7823c228876816fc656c1cccbe": {
+    "network": "eth",
+    "pool_address": "0x03a402b9cec60d1c859cfeff295f8cc633bb40e4538c8443307f16ff8afca42a",
+    "pool_created_at": "2026-09-25T06:51:35Z",
+    "base_token_symbol": "GWIN",
+    "base_token_address": "0x0ee28d87ba78fd7823c228876816fc656c1cccbe",
+    "volume_24h_usd": "26.7305",
+    "reserve_usd": null,
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "eth:0xe3236048a194bba73dcf998d39ee44b96f214212": {
+    "network": "eth",
+    "pool_address": "0x8185a815398f1ed6f7250f89900179105c9fee4b1253712307db98c043ced4a1",
+    "pool_created_at": "2026-09-25T06:49:47Z",
+    "base_token_symbol": "VIKING",
+    "base_token_address": "0xe3236048a194bba73dcf998d39ee44b96f214212",
+    "volume_24h_usd": "1464.0249316469",
+    "reserve_usd": "10339.2229",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "eth:0x7b97a644c45d5cd817d10fe838efe739417296f8": {
+    "network": "eth",
+    "pool_address": "0xbb72dd98cc8c9d68a8680aa7daf694797b56bc2273c0efbd5332a65fe4748cde",
+    "pool_created_at": "2026-09-25T06:44:23Z",
+    "base_token_symbol": "GORG",
+    "base_token_address": "0x7b97a644c45d5cd817d10fe838efe739417296f8",
+    "volume_24h_usd": "26.7407",
+    "reserve_usd": "0.0390517947588667",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "eth:0xc264305d52213ac6292ad65690ff2bcd14a9ed18": {
+    "network": "eth",
+    "pool_address": "0xfce0fea7892479870b7c86290d6ab96a647b3b86",
+    "pool_created_at": "2026-09-25T06:41:47Z",
+    "base_token_symbol": "BAvAC",
+    "base_token_address": "0xc264305d52213ac6292ad65690ff2bcd14a9ed18",
+    "volume_24h_usd": "687.7703938114",
+    "reserve_usd": "3743.4306",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "eth:0x1793f851bcc39c7b185a8024f92284670828c0cf": {
+    "network": "eth",
+    "pool_address": "0xc56cb133e44315efc6734ce5d845909729ff791e",
+    "pool_created_at": "2026-09-25T06:39:11Z",
+    "base_token_symbol": "MMS",
+    "base_token_address": "0x1793f851bcc39c7b185a8024f92284670828c0cf",
+    "volume_24h_usd": "717.0644377955",
+    "reserve_usd": "0.00004224071969",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "eth:0xfe913c632d63c4e941b123a00af4b2af50ed0864": {
+    "network": "eth",
+    "pool_address": "0x2a1272b839978ff9054474df1990f066608586a3f47084f4ac0ae2ee680af032",
+    "pool_created_at": "2026-09-25T06:32:35Z",
+    "base_token_symbol": "GBUND",
+    "base_token_address": "0xfe913c632d63c4e941b123a00af4b2af50ed0864",
+    "volume_24h_usd": "26.7666",
+    "reserve_usd": "0.0000000000000214811415918675",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "eth:0x35e1e973f894f9fcb9c37b02719c7404aafca786": {
+    "network": "eth",
+    "pool_address": "0xb001a01556dfc4e83e289cdf80c8c994fac3cee6",
+    "pool_created_at": "2026-09-25T06:28:35Z",
+    "base_token_symbol": "IMC",
+    "base_token_address": "0x35e1e973f894f9fcb9c37b02719c7404aafca786",
+    "volume_24h_usd": "7245.7027226973",
+    "reserve_usd": "0.0604896195486025",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "eth:0x11349a99d604f38b47b0001542bf06741fed0111": {
+    "network": "eth",
+    "pool_address": "0xf28d2d8d938635363c4e8857ca8f47402d214f4616cab2500a44407aa613f17e",
+    "pool_created_at": "2026-09-25T06:28:11Z",
+    "base_token_symbol": "TETHERIUM",
+    "base_token_address": "0x11349a99d604f38b47b0001542bf06741fed0111",
+    "volume_24h_usd": "1017.3085624381",
+    "reserve_usd": "3.4763",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "eth:0x40fdef99055c0f281b9971a245082321d4e2df18": {
+    "network": "eth",
+    "pool_address": "0xd04acaeb0f5fb55b19d661ff8bba81d0e17c9a5f",
+    "pool_created_at": "2026-09-25T06:23:59Z",
+    "base_token_symbol": "JURASSIC",
+    "base_token_address": "0x40fdef99055c0f281b9971a245082321d4e2df18",
+    "volume_24h_usd": "491.9123970681",
+    "reserve_usd": "0.0002080860798",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "eth:0xc8e6ae07c4e4308cab9b74b9b3f553556861421b": {
+    "network": "eth",
+    "pool_address": "0x015940c5d40c0d4b2237e5e5e9bf97ff194b0ea006f2c00add1e34b182e51b80",
+    "pool_created_at": "2026-09-25T06:23:47Z",
+    "base_token_symbol": "IMC",
+    "base_token_address": "0xc8e6ae07c4e4308cab9b74b9b3f553556861421b",
+    "volume_24h_usd": "14268.6467403348",
+    "reserve_usd": "159.1072",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "eth:0xca89ba669fe915b137a7f8fe1ebd31725b584216": {
+    "network": "eth",
+    "pool_address": "0x80c248a5fe1c7a7be8c7f4b7d30e2eef9715d4838b0c1bbfecb981a7bab36b81",
+    "pool_created_at": "2026-09-25T06:23:23Z",
+    "base_token_symbol": "\u5bcc\u8d35",
+    "base_token_address": "0xca89ba669fe915b137a7f8fe1ebd31725b584216",
+    "volume_24h_usd": "1204.4957897101",
+    "reserve_usd": "9674.8511",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "eth:0xdae0fafd65385e7775cf75b1398735155ef6acd2": {
+    "network": "eth",
+    "pool_address": "0x710d564105e5edfd3a87c3a18a5717b70a0b2660f8329930225f5343bd2b9a3b",
+    "pool_created_at": "2026-09-25T06:22:47Z",
+    "base_token_symbol": "TRU",
+    "base_token_address": "0xdae0fafd65385e7775cf75b1398735155ef6acd2",
+    "volume_24h_usd": "524.8766820963",
+    "reserve_usd": "6670.4216",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "eth:0xe7c3d8c9a439fede00d2600032d5db0be71c3c29": {
+    "network": "eth",
+    "pool_address": "0x6da350e15beae5c814b790fd21f95e4c141052114a513fced3ec8a72fe019d1b",
+    "pool_created_at": "2026-09-25T06:22:35Z",
+    "base_token_symbol": "JPYC",
+    "base_token_address": "0xe7c3d8c9a439fede00d2600032d5db0be71c3c29",
+    "volume_24h_usd": "1049.2288464964",
+    "reserve_usd": "23220.8217",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "eth:0xaeaef7b0cb6265ce57d2223b1c2e830d3af41515": {
+    "network": "eth",
+    "pool_address": "0xcd052810d921c5843af9f3a6e9e5dcdc9b9dbc77685f5d9da5316bf1b8c840ae",
+    "pool_created_at": "2026-09-25T06:12:11Z",
+    "base_token_symbol": "LITH",
+    "base_token_address": "0xaeaef7b0cb6265ce57d2223b1c2e830d3af41515",
+    "volume_24h_usd": "36.8845802044",
+    "reserve_usd": "2877.5667",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "eth:0xab840ab646f42499d1bcbf02d17672a6517ee200": {
+    "network": "eth",
+    "pool_address": "0x8f86ce245bbd8df10e843d87272d33d82bf641ce15df775e1da2d2b6642fac9e",
+    "pool_created_at": "2026-09-25T06:10:11Z",
+    "base_token_symbol": "JEANPHIL",
+    "base_token_address": "0xab840ab646f42499d1bcbf02d17672a6517ee200",
+    "volume_24h_usd": "53.5562",
+    "reserve_usd": "8032.2023",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "eth:0xf31a711d277d9913e6dbc746693c1f61743cfe02": {
+    "network": "eth",
+    "pool_address": "0x080e4557881acfbac816193741d2752476524353",
+    "pool_created_at": "2026-09-25T06:09:59Z",
+    "base_token_symbol": "JBBY",
+    "base_token_address": "0xf31a711d277d9913e6dbc746693c1f61743cfe02",
+    "volume_24h_usd": "458.0246901953",
+    "reserve_usd": "0.0001848777136",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "eth:0xff185d2a334072d7d7d1476bc06457819f90aa0e": {
+    "network": "eth",
+    "pool_address": "0xe3e529a61db2bdf806500d6c9ee2c2fd45486850",
+    "pool_created_at": "2026-09-25T06:05:47Z",
+    "base_token_symbol": "TLS",
+    "base_token_address": "0xff185d2a334072d7d7d1476bc06457819f90aa0e",
+    "volume_24h_usd": "3859.2293617229",
+    "reserve_usd": "0.00190810999",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "arbitrum:0xd4aef2dc40e0ddfea4032d8376ee69f5506aef81": {
+    "network": "arbitrum",
+    "pool_address": "0xae27a6d5847c6483deb7e59fb881f27808e4e545",
+    "pool_created_at": "2026-09-25T06:13:36Z",
+    "base_token_symbol": "\u0e4cNENE",
+    "base_token_address": "0xd4aef2dc40e0ddfea4032d8376ee69f5506aef81",
+    "volume_24h_usd": "0.1308944411",
+    "reserve_usd": "0.8025",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "arbitrum:0x2c9632759f649d1ee47f8f0bb634c864a3a3831f": {
+    "network": "arbitrum",
+    "pool_address": "0xb1269593863159521ec73e34399ad8420d8530318ae567c9d1df7b0bc724753f",
+    "pool_created_at": "2026-09-25T04:29:01Z",
+    "base_token_symbol": "YGTR",
+    "base_token_address": "0x2c9632759f649d1ee47f8f0bb634c864a3a3831f",
+    "volume_24h_usd": "0.0267719",
+    "reserve_usd": "5.3502",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "arbitrum:0x93ce9bf90c0c9470b729fe8743d1b32b0a4a255a": {
+    "network": "arbitrum",
+    "pool_address": "0x09db0f782681bd735621ff661208a6be9d969e17a5da20cd3e9abeb63f6d101e",
+    "pool_created_at": "2026-09-25T02:16:29Z",
+    "base_token_symbol": "NEX",
+    "base_token_address": "0x93ce9bf90c0c9470b729fe8743d1b32b0a4a255a",
+    "volume_24h_usd": "0.1998448867",
+    "reserve_usd": "1.8726",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "arbitrum:0x328f7c252b61b7095cc068990c719cb666a84ba3": {
+    "network": "arbitrum",
+    "pool_address": "0x59f69ed1416bd01ad52fd3335f78be5a8ea26561",
+    "pool_created_at": "2026-09-25T02:12:08Z",
+    "base_token_symbol": "NITE",
+    "base_token_address": "0x328f7c252b61b7095cc068990c719cb666a84ba3",
+    "volume_24h_usd": "78.3576768142",
+    "reserve_usd": "6481.4756",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "arbitrum:0xfaffe0499b424cfe6d0352b0f416fa5d9deb4cca": {
+    "network": "arbitrum",
+    "pool_address": "0xcacdb97dbb21aaaf11754aa45e88df196303f598da9e06576d74f349c653350e",
+    "pool_created_at": "2026-09-25T01:40:22Z",
+    "base_token_symbol": "ORB",
+    "base_token_address": "0xfaffe0499b424cfe6d0352b0f416fa5d9deb4cca",
+    "volume_24h_usd": "0.1998649359",
+    "reserve_usd": "1.8726",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "arbitrum:0x6db2abb7830d9c8c10a8511a0e230c8edffd8e43": {
+    "network": "arbitrum",
+    "pool_address": "0x6d008d287d12de90bffe353addcda2f28c0acc0b91312eabb6e85f82c2b53df8",
+    "pool_created_at": "2026-09-25T01:38:53Z",
+    "base_token_symbol": "TRIN",
+    "base_token_address": "0x6db2abb7830d9c8c10a8511a0e230c8edffd8e43",
+    "volume_24h_usd": "0.1998649359",
+    "reserve_usd": "4.0126",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "arbitrum:0xaf0ffcbe7c81671759dcf99b8c3f60fec3c32331": {
+    "network": "arbitrum",
+    "pool_address": "0x9aaab2cb36ec52d034021a4861a4d3ac13eaba21",
+    "pool_created_at": "2026-09-24T22:59:06Z",
+    "base_token_symbol": "FOINIX",
+    "base_token_address": "0xaf0ffcbe7c81671759dcf99b8c3f60fec3c32331",
+    "volume_24h_usd": "27.5821158632",
+    "reserve_usd": "9.0953",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "arbitrum:0x77b7787a09818502305c95d68a2571f090abb135": {
+    "network": "arbitrum",
+    "pool_address": "0x2a63d203204a6523539f317003ff8bfe3e37a046407e20b5bd99e3cea5360faa",
+    "pool_created_at": "2026-09-24T21:33:40Z",
+    "base_token_symbol": "DRV",
+    "base_token_address": "0x77b7787a09818502305c95d68a2571f090abb135",
+    "volume_24h_usd": "64.4411954722",
+    "reserve_usd": "840.7808",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "arbitrum:0x7615ee015eb79df5423e147eb46165d2432cbcdf": {
+    "network": "arbitrum",
+    "pool_address": "0x016ad73fc25d1c267cb9c3b548aebb8b154935ae6a7cab131926cfdc1564d5bb",
+    "pool_created_at": "2026-09-24T21:07:07Z",
+    "base_token_symbol": "TUIUIU",
+    "base_token_address": "0x7615ee015eb79df5423e147eb46165d2432cbcdf",
+    "volume_24h_usd": "86.6191142205",
+    "reserve_usd": "192.0715",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "arbitrum:0xd29a172d959f4a79fcaee7c8cfaffe5dde5289ec": {
+    "network": "arbitrum",
+    "pool_address": "0xba83ca96ebc3e7b29ff62a17c8203550f88aaaa55ce010ab523d9c77621b5728",
+    "pool_created_at": "2026-09-24T20:19:06Z",
+    "base_token_symbol": "CFIX",
+    "base_token_address": "0xd29a172d959f4a79fcaee7c8cfaffe5dde5289ec",
+    "volume_24h_usd": "0.07384460103",
+    "reserve_usd": "0.000257929506138977",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "arbitrum:0x08ffdd54c8e5e4b8f2a70b02f6ae30bfdb8925a1": {
+    "network": "arbitrum",
+    "pool_address": "0x85c8d023ea5810e225c4fc81eb04dc66f97426d9",
+    "pool_created_at": "2026-09-24T20:14:43Z",
+    "base_token_symbol": "BUTTGET",
+    "base_token_address": "0x08ffdd54c8e5e4b8f2a70b02f6ae30bfdb8925a1",
+    "volume_24h_usd": "26.9057",
+    "reserve_usd": "4309.035",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "arbitrum:0x1dce77aaec9463412b0dc3f5c9fa7337e362ea70": {
+    "network": "arbitrum",
+    "pool_address": "0xcccf18db6a5cc4eba092e1311db2bdc6bb947ee3",
+    "pool_created_at": "2026-09-24T18:12:37Z",
+    "base_token_symbol": "BAGGINS",
+    "base_token_address": "0x1dce77aaec9463412b0dc3f5c9fa7337e362ea70",
+    "volume_24h_usd": "747.0491143455",
+    "reserve_usd": "4418.1786",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "arbitrum:0xf97f4df75117a78c1a5a0dbb814af92458539fb4": {
+    "network": "arbitrum",
+    "pool_address": "0xfaf7f7c2db5bd79b73b65aa087466a755e11232e2b16072fb06f0312b96fbd65",
+    "pool_created_at": "2026-09-24T17:09:38Z",
+    "base_token_symbol": "LINK",
+    "base_token_address": "0xf97f4df75117a78c1a5a0dbb814af92458539fb4",
+    "volume_24h_usd": "58.2244696485",
+    "reserve_usd": "29.961",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "arbitrum:0x5c3cc53fe3b7071f3f4db457ad3dcb943e5a5026": {
+    "network": "arbitrum",
+    "pool_address": "0xf11eb48c4ce52ee9d2b10fbc099a89281a9ab8db",
+    "pool_created_at": "2026-09-24T16:18:05Z",
+    "base_token_symbol": "AXIS",
+    "base_token_address": "0x5c3cc53fe3b7071f3f4db457ad3dcb943e5a5026",
+    "volume_24h_usd": "23788.2930647959",
+    "reserve_usd": "99485.5271",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "arbitrum:0x23fa70d77164d8c49f4679ba87e8ef89b5189be6": {
+    "network": "arbitrum",
+    "pool_address": "0x081f841fa82923b6586ff20cbff2b93e70b76d12",
+    "pool_created_at": "2026-09-24T14:03:33Z",
+    "base_token_symbol": "PGA",
+    "base_token_address": "0x23fa70d77164d8c49f4679ba87e8ef89b5189be6",
+    "volume_24h_usd": "2766.3255378334",
+    "reserve_usd": "4371.0971",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "arbitrum:0x13ad51ed4f1b7e9dc168d8a00cb3f4ddd85efa60": {
+    "network": "arbitrum",
+    "pool_address": "0xd748e5fe73cc964948225c5c423d845d633b2c614ad3eec39cb61e294ed7beaa",
+    "pool_created_at": "2026-09-24T12:50:44Z",
+    "base_token_symbol": "LDO",
+    "base_token_address": "0x13ad51ed4f1b7e9dc168d8a00cb3f4ddd85efa60",
+    "volume_24h_usd": "105.9513038396",
+    "reserve_usd": "0.2675",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "arbitrum:0x650e739dd2271bc26e34181a99b4bfda5aa729d5": {
+    "network": "arbitrum",
+    "pool_address": "0x7d97c5a0cac249e4e7da399c9561f42e808829be",
+    "pool_created_at": "2026-09-24T12:32:43Z",
+    "base_token_symbol": "MELI",
+    "base_token_address": "0x650e739dd2271bc26e34181a99b4bfda5aa729d5",
+    "volume_24h_usd": "0.1904162309",
+    "reserve_usd": "3.4776",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "arbitrum:0xd3443ee1e91af28e5fb858fbd0d72a63ba8046e0": {
+    "network": "arbitrum",
+    "pool_address": "0x1e61a9fa44aa76b72675d98da3299453dc9d0e2fb6f4b8eba3c9a840af46b0af",
+    "pool_created_at": "2026-09-24T11:38:32Z",
+    "base_token_symbol": "gUSDC",
+    "base_token_address": "0xd3443ee1e91af28e5fb858fbd0d72a63ba8046e0",
+    "volume_24h_usd": "1499.1642512565",
+    "reserve_usd": "1696.2746",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "arbitrum:0xe857ce4840f92ee36e359e55e741f998566b1736": {
+    "network": "arbitrum",
+    "pool_address": "0xdb9ee6e0d5ad197031c56c813ac58d2dd9b94442",
+    "pool_created_at": "2026-09-24T09:16:42Z",
+    "base_token_symbol": "CIPHO",
+    "base_token_address": "0xe857ce4840f92ee36e359e55e741f998566b1736",
+    "volume_24h_usd": "123198.47074794",
+    "reserve_usd": "69489.5674",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  },
+  "arbitrum:0x717ac570028e688f1daf179e9115f0a9069923d3": {
+    "network": "arbitrum",
+    "pool_address": "0x59f2b29344762b93fe0c4e2ea640b37af5366ccd",
+    "pool_created_at": "2026-09-24T06:05:05Z",
+    "base_token_symbol": "TVNBUDK",
+    "base_token_address": "0x717ac570028e688f1daf179e9115f0a9069923d3",
+    "volume_24h_usd": "0.0",
+    "reserve_usd": "747.1526",
+    "first_seen_at": "2026-09-25T07:23:51.834598+00:00"
+  }
+}
