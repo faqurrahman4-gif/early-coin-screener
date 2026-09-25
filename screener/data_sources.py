@@ -116,6 +116,33 @@ def get_coin_market_chart_range(coingecko_id: str, from_ts: int, to_ts: int) -> 
 # Untuk Solana pakai Solscan Public API dengan struktur endpoint berbeda.
 # ---------------------------------------------------------------------------
 
+def get_gecko_token_info(network: str, contract_address: str) -> dict:
+    """
+    Ambil metadata token LANGSUNG dari GeckoTerminal (nama, deskripsi,
+    website, sosial media) berdasarkan contract address — sumber yang jauh
+    lebih lengkap dibanding mengandalkan field 'homepage'/'whitepaper' di
+    CoinGecko, karena banyak proyek tidak pernah mengisi field itu di sana
+    meskipun mereka punya website/docs resmi. Ini yang dipakai untuk
+    mengisi narasi 'kenapa token ini masuk radar' walau whitepaper formal
+    tidak ketemu.
+    """
+    data = _get(
+        f"{config.GECKOTERMINAL_BASE}/networks/{network}/tokens/{contract_address}/info"
+    )
+    if not data or not data.get("data"):
+        return {}
+    attrs = data["data"].get("attributes", {})
+    return {
+        "name": attrs.get("name"),
+        "description": attrs.get("description"),
+        "websites": attrs.get("websites") or [],
+        "twitter_handle": attrs.get("twitter_handle"),
+        "telegram_handle": attrs.get("telegram_handle"),
+        "discord_url": attrs.get("discord_url"),
+        "image_url": attrs.get("image_url"),
+    }
+
+
 def get_top_holders_etherscan(token_contract: str, api_key: str,
                                explorer_base: str = "https://api.etherscan.io/api") -> list[dict]:
     """
@@ -141,3 +168,33 @@ def get_wash_trading_ratio(volume_24h_usd: float, unique_active_wallets_24h: int
     if not unique_active_wallets_24h:
         return None
     return volume_24h_usd / unique_active_wallets_24h
+
+
+# ---------------------------------------------------------------------------
+# GeckoTerminal token info — deskripsi, website, sosial media LANGSUNG dari
+# kontrak, tanpa bergantung pada apakah proyek mengisi field "homepage" di
+# CoinGecko (banyak proyek tidak pernah mengisi itu meskipun websitenya ada).
+# Endpoint: /networks/{network}/tokens/{address}/info
+# ---------------------------------------------------------------------------
+
+def get_token_info(network: str, address: str) -> dict:
+    """
+    Ambil metadata token (nama, deskripsi, image, website, sosial media)
+    langsung dari GeckoTerminal berdasarkan contract address. Ini sumber
+    yang lebih lengkap dibanding field "homepage"/"whitepaper" di CoinGecko,
+    karena banyak proyek early-stage tidak pernah isi itu di CoinGecko.
+    """
+    data = _get(f"{config.GECKOTERMINAL_BASE}/networks/{network}/tokens/{address}/info")
+    if not data or not data.get("data"):
+        return {}
+    attrs = data["data"].get("attributes", {})
+    return {
+        "name": attrs.get("name"),
+        "description": attrs.get("description"),
+        "websites": attrs.get("websites") or [],
+        "twitter_handle": attrs.get("twitter_handle"),
+        "telegram_handle": attrs.get("telegram_handle"),
+        "discord_url": attrs.get("discord_url"),
+        "image_url": attrs.get("image_url"),
+        "gt_score": attrs.get("gt_score"),  # skor kelengkapan info dari GeckoTerminal sendiri
+    }

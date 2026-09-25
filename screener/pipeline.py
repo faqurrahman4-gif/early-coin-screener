@@ -109,16 +109,36 @@ def run_token_pipeline(token_config: dict) -> dict:
     )
 
     # --- Faktor 4 & 5: Tokenomics & Utilitas (LLM whitepaper reader) ---
-    # Sumber URL diambil otomatis dari CoinGecko (field "links.whitepaper")
-    # kalau ada; kalau tidak ada, fallback ke homepage proyek (banyak proyek
-    # taruh link docs di homepage-nya).
+    # Sumber URL/deskripsi digabung dari 3 tempat, urut prioritas:
+    # 1) whitepaper_urls manual (kalau kamu isi di MANUAL_OVERRIDES)
+    # 2) field resmi CoinGecko (links.whitepaper / homepage) — sering kosong
+    #    untuk token kecil karena proyek tidak selalu mengisi halaman
+    #    CoinGecko mereka
+    # 3) GeckoTerminal token info (deskripsi + websites) — sumber tambahan
+    #    yang lebih lengkap untuk token yang baru/kecil, diambil langsung
+    #    dari data on-chain, bukan bergantung proyek mengisi CoinGecko
+    gecko_info = {}
+    if token_config.get("network") and token_config.get("explorer_contract"):
+        gecko_info = data_sources.get_gecko_token_info(
+            token_config["network"], token_config["explorer_contract"]
+        )
+
     whitepaper_urls = list(token_config.get("whitepaper_urls") or [])
     if not whitepaper_urls and market.get("whitepaper_hints"):
         whitepaper_urls.append(market["whitepaper_hints"])
     if not whitepaper_urls and market.get("homepage"):
         whitepaper_urls.append(market["homepage"])
+    if not whitepaper_urls and gecko_info.get("websites"):
+        whitepaper_urls.extend(gecko_info["websites"][:2])  # maks 2 supaya hemat kuota
 
     combined_text = ""
+    # Deskripsi dari GeckoTerminal dimasukkan duluan sebagai konteks dasar —
+    # ini seringkali satu-satunya info yang ada untuk token yang belum
+    # punya whitepaper formal, jadi tetap berguna untuk LLM baca meskipun
+    # cuma 1-2 paragraf.
+    if gecko_info.get("description"):
+        combined_text += f"\n\n=== Deskripsi resmi (GeckoTerminal) ===\n{gecko_info['description']}"
+
     for url in whitepaper_urls:
         text = llm_reader.scrape_docs_text(url)
         if text:
@@ -190,13 +210,18 @@ def run_token_pipeline(token_config: dict) -> dict:
         "tvl_usd": (data_sources.get_protocol_tvl(defillama_slug) or {}).get("tvl") if defillama_slug else None,
         "network": token_config.get("network"),
         "contract_address": token_config.get("explorer_contract"),
-        # --- narasi kualitatif (dari LLM baca whitepaper, bisa null kalau whitepaper tidak ketemu) ---
-        "ringkasan": llm_profile.get("ringkasan"),
+        # --- narasi kualitatif ---
+        # Prioritas: ringkasan dari LLM (kalau whitepaper/deskripsi berhasil
+        # dibaca) -> fallback ke deskripsi mentah GeckoTerminal (kalau LLM
+        # tidak sempat jalan sama sekali karena benar-benar tidak ada teks).
+        "ringkasan": llm_profile.get("ringkasan") or gecko_info.get("description"),
         "mekanisme_kerja": llm_profile.get("mekanisme_kerja"),
         "keunggulan": llm_profile.get("keunggulan", []),
         "kelemahan_atau_risiko": llm_profile.get("kelemahan_atau_risiko", []),
         "keunikan": llm_profile.get("keunikan"),
         "tim_atau_backer_disebutkan": llm_profile.get("tim_atau_backer_disebutkan"),
+        "website": (gecko_info.get("websites") or [None])[0],
+        "twitter": gecko_info.get("twitter_handle"),
         # --- proxy holder concentration (BUKAN institusi vs retail — itu
         # tidak bisa didapat gratis & akurat untuk token kecil/baru) ---
         "top10_wallet_konsentrasi_pct": token_config.get("top10_wallet_voting_power_pct"),
@@ -204,10 +229,11 @@ def run_token_pipeline(token_config: dict) -> dict:
             "Breakdown holder institusi vs retail TIDAK tersedia lewat API gratis "
             "untuk token seukuran ini — kalau butuh data ini, harus riset manual "
             "langsung ke block explorer atau laporan proyek."
-            if llm_profile else
-            "Whitepaper/docs resmi tidak berhasil ditemukan/dibaca — profil proyek "
-            "ini masih kosong. Isi 'whitepaper_urls' di MANUAL_OVERRIDES untuk token "
-            "ini supaya narasinya lengkap."
+            if (llm_profile or gecko_info.get("description")) else
+            "Tidak ada whitepaper, docs, maupun deskripsi resmi yang ditemukan "
+            "untuk token ini di GeckoTerminal maupun CoinGecko — kemungkinan "
+            "proyek belum melengkapi metadata publiknya. Ini sendiri sinyal "
+            "yang perlu diwaspadai (transparansi rendah), bukan error di screener."
         ),
     }
 
