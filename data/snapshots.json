@@ -1781,5 +1781,869 @@
       "top10_wallet_konsentrasi_pct": null,
       "catatan": "Whitepaper/docs resmi tidak berhasil ditemukan/dibaca \u2014 profil proyek ini masih kosong. Isi 'whitepaper_urls' di MANUAL_OVERRIDES untuk token ini supaya narasinya lengkap."
     }
+  },
+  {
+    "run_timestamp": "2026-09-25T23:24:20.885927+00:00",
+    "token_symbol": "ASE",
+    "coingecko_id": "asentum",
+    "defillama_slug": null,
+    "network": "eth",
+    "contract_address": "0x041ff0e49f6f774e7dc7bd10ee4a14c00b1d80b2",
+    "age_days": 138,
+    "total_skor_0_20": 5.42,
+    "total_skor_persen": 27.1,
+    "factor_scores": {
+      "value_accrual": 2,
+      "revenue": 5,
+      "market_dominance": 17,
+      "tokenomics": 0,
+      "utility": 0,
+      "governance": 0.7,
+      "onchain_activity": 14.0,
+      "data_transparency": 14
+    },
+    "factor_breakdown": {
+      "value_accrual": {
+        "konsistensi_mekanisme": 2,
+        "skala_dampak": 0,
+        "buyback_yield_tahunan_pct": 0.0
+      },
+      "revenue": {
+        "price_to_fee_ratio": null,
+        "skala_revenue": 0,
+        "tren_growth_pct_30d": 0,
+        "tren_pertumbuhan": 5
+      },
+      "market_dominance": {
+        "rank": 3245,
+        "total_kompetitor": 1,
+        "rank_percentile": 12,
+        "trend_share": 5
+      },
+      "tokenomics": {
+        "skor_0_20": 0,
+        "alasan": "Gagal memanggil Gemini API (HTTPError, HTTP 404)"
+      },
+      "utility": {
+        "skor_0_20": 0,
+        "alasan": "Gagal memanggil Gemini API (HTTPError, HTTP 404)"
+      },
+      "governance": {
+        "aktivitas_voting": 0,
+        "desentralisasi": 1,
+        "raw_skor_sebelum_multiplier": 1,
+        "age_multiplier": 0.7
+      },
+      "onchain_activity": {
+        "kualitas_volume": 10,
+        "retensi": 10,
+        "retensi_pct": 100,
+        "wash_trading_multiple_of_category_avg": 0.0,
+        "raw_skor_sebelum_multiplier": 20,
+        "age_multiplier": 0.7
+      },
+      "data_transparency": {
+        "claim_vs_onchain_diff_pct": null,
+        "indexed_on_defillama": false,
+        "has_public_explorer": true
+      }
+    },
+    "confidence": {
+      "value_accrual": "Insufficient",
+      "revenue": "Insufficient",
+      "market_dominance": "Insufficient",
+      "governance": "Insufficient",
+      "onchain_activity": "Insufficient",
+      "tokenomics": "rendah",
+      "utility": "rendah",
+      "data_transparency": "Confirmed"
+    },
+    "why_on_radar": {
+      "market_cap_usd": 859651,
+      "rank_kategori": 3245,
+      "total_kompetitor_sekategori": null,
+      "revenue_tahunan_estimasi_usd": null,
+      "tvl_usd": null,
+      "network": "eth",
+      "contract_address": "0x041ff0e49f6f774e7dc7bd10ee4a14c00b1d80b2",
+      "ringkasan": "Asentum is a post-quantum Layer-1 blockchain engineered to withstand the coming quantum computing era while democratizing smart contract development. Built with NIST FIPS 204 ML-DSA-65 (Dilithium3) signatures from genesis, Asentum is the first major chain cryptographically secured against quantum attacks. Its JavaScript-native smart contract environment opens blockchain development to 22+ million existing developers, eliminating language barriers that have constrained the industry. \n\nRunning on Tendermint-style BFT consensus optimized for consumer hardware, Asentum enables permissionless validation on devices as modest as a Raspberry Pi 4, fundamentally redistributing network power. ASE powers transaction fees, validator staking, governance participation, and ecosystem incentives, anchoring an infrastructure built to outlast legacy chains facing quantum obsolescence.",
+      "mekanisme_kerja": null,
+      "keunggulan": [],
+      "kelemahan_atau_risiko": [],
+      "keunikan": null,
+      "tim_atau_backer_disebutkan": null,
+      "website": "https://www.asentum.com",
+      "twitter": "Asentum",
+      "top10_wallet_konsentrasi_pct": null,
+      "catatan": "Breakdown holder institusi vs retail TIDAK tersedia lewat API gratis untuk token seukuran ini \u2014 kalau butuh data ini, harus riset manual langsung ke block explorer atau laporan proyek."
+    }
+  },
+  {
+    "run_timestamp": "2026-09-25T23:24:21.493853+00:00",
+    "token_symbol": "LIT",
+    "coingecko_id": "lighter",
+    "defillama_slug": null,
+    "network": "eth",
+    "contract_address": "0x232ce3bd40fcd6f80f3d55a522d03f25df784ee2",
+    "age_days": 250,
+    "total_skor_0_20": 5.58,
+    "total_skor_persen": 27.9,
+    "factor_scores": {
+      "value_accrual": 2,
+      "revenue": 5,
+      "market_dominance": 17,
+      "tokenomics": 0,
+      "utility": 0,
+      "governance": 0.85,
+      "onchain_activity": 17.0,
+      "data_transparency": 14
+    },
+    "factor_breakdown": {
+      "value_accrual": {
+        "konsistensi_mekanisme": 2,
+        "skala_dampak": 0,
+        "buyback_yield_tahunan_pct": 0.0
+      },
+      "revenue": {
+        "price_to_fee_ratio": null,
+        "skala_revenue": 0,
+        "tren_growth_pct_30d": 0,
+        "tren_pertumbuhan": 5
+      },
+      "market_dominance": {
+        "rank": 73,
+        "total_kompetitor": 1,
+        "rank_percentile": 12,
+        "trend_share": 5
+      },
+      "tokenomics": {
+        "skor_0_20": 0,
+        "alasan": "Gagal memanggil Gemini API (HTTPError, HTTP 404)"
+      },
+      "utility": {
+        "skor_0_20": 0,
+        "alasan": "Gagal memanggil Gemini API (HTTPError, HTTP 404)"
+      },
+      "governance": {
+        "aktivitas_voting": 0,
+        "desentralisasi": 1,
+        "raw_skor_sebelum_multiplier": 1,
+        "age_multiplier": 0.85
+      },
+      "onchain_activity": {
+        "kualitas_volume": 10,
+        "retensi": 10,
+        "retensi_pct": 100,
+        "wash_trading_multiple_of_category_avg": 0.0,
+        "raw_skor_sebelum_multiplier": 20,
+        "age_multiplier": 0.85
+      },
+      "data_transparency": {
+        "claim_vs_onchain_diff_pct": null,
+        "indexed_on_defillama": false,
+        "has_public_explorer": true
+      }
+    },
+    "confidence": {
+      "value_accrual": "Insufficient",
+      "revenue": "Insufficient",
+      "market_dominance": "Insufficient",
+      "governance": "Insufficient",
+      "onchain_activity": "Insufficient",
+      "tokenomics": "rendah",
+      "utility": "rendah",
+      "data_transparency": "Confirmed"
+    },
+    "why_on_radar": {
+      "market_cap_usd": 1215342929,
+      "rank_kategori": 73,
+      "total_kompetitor_sekategori": null,
+      "revenue_tahunan_estimasi_usd": null,
+      "tvl_usd": null,
+      "network": "eth",
+      "contract_address": "0x232ce3bd40fcd6f80f3d55a522d03f25df784ee2",
+      "ringkasan": "Lighter is a decentralized trading platform built for unmatched security and scale. It\u2019s the first exchange to offer verifiable order matching and liquidations while delivering best-in-class performance on par with traditional exchanges.\n\n",
+      "mekanisme_kerja": null,
+      "keunggulan": [],
+      "kelemahan_atau_risiko": [],
+      "keunikan": null,
+      "tim_atau_backer_disebutkan": null,
+      "website": "https://lighter.xyz",
+      "twitter": "Lighter_xyz",
+      "top10_wallet_konsentrasi_pct": null,
+      "catatan": "Breakdown holder institusi vs retail TIDAK tersedia lewat API gratis untuk token seukuran ini \u2014 kalau butuh data ini, harus riset manual langsung ke block explorer atau laporan proyek."
+    }
+  },
+  {
+    "run_timestamp": "2026-09-25T23:24:29.268817+00:00",
+    "token_symbol": "ZAMA",
+    "coingecko_id": "zama",
+    "defillama_slug": null,
+    "network": "eth",
+    "contract_address": "0xa12cc123ba206d4031d1c7f6223d1c2ec249f4f3",
+    "age_days": 235,
+    "total_skor_0_20": 5.58,
+    "total_skor_persen": 27.9,
+    "factor_scores": {
+      "value_accrual": 2,
+      "revenue": 5,
+      "market_dominance": 17,
+      "tokenomics": 0,
+      "utility": 0,
+      "governance": 0.85,
+      "onchain_activity": 17.0,
+      "data_transparency": 14
+    },
+    "factor_breakdown": {
+      "value_accrual": {
+        "konsistensi_mekanisme": 2,
+        "skala_dampak": 0,
+        "buyback_yield_tahunan_pct": 0
+      },
+      "revenue": {
+        "price_to_fee_ratio": null,
+        "skala_revenue": 0,
+        "tren_growth_pct_30d": 0,
+        "tren_pertumbuhan": 5
+      },
+      "market_dominance": {
+        "rank": 1,
+        "total_kompetitor": 1,
+        "rank_percentile": 12,
+        "trend_share": 5
+      },
+      "tokenomics": {
+        "skor_0_20": 0,
+        "alasan": "Gagal memanggil Gemini API (HTTPError, HTTP 404)"
+      },
+      "utility": {
+        "skor_0_20": 0,
+        "alasan": "Gagal memanggil Gemini API (HTTPError, HTTP 404)"
+      },
+      "governance": {
+        "aktivitas_voting": 0,
+        "desentralisasi": 1,
+        "raw_skor_sebelum_multiplier": 1,
+        "age_multiplier": 0.85
+      },
+      "onchain_activity": {
+        "kualitas_volume": 10,
+        "retensi": 10,
+        "retensi_pct": 100,
+        "wash_trading_multiple_of_category_avg": 0.0,
+        "raw_skor_sebelum_multiplier": 20,
+        "age_multiplier": 0.85
+      },
+      "data_transparency": {
+        "claim_vs_onchain_diff_pct": null,
+        "indexed_on_defillama": false,
+        "has_public_explorer": true
+      }
+    },
+    "confidence": {
+      "value_accrual": "Insufficient",
+      "revenue": "Insufficient",
+      "market_dominance": "Insufficient",
+      "governance": "Insufficient",
+      "onchain_activity": "Insufficient",
+      "tokenomics": "rendah",
+      "utility": "rendah",
+      "data_transparency": "Confirmed"
+    },
+    "why_on_radar": {
+      "market_cap_usd": null,
+      "rank_kategori": null,
+      "total_kompetitor_sekategori": null,
+      "revenue_tahunan_estimasi_usd": null,
+      "tvl_usd": null,
+      "network": "eth",
+      "contract_address": "0xa12cc123ba206d4031d1c7f6223d1c2ec249f4f3",
+      "ringkasan": "Zama is an open source cryptography company that builds state-of-the-art Fully Homomorphic Encryption (FHE) solutions for blockchain.",
+      "mekanisme_kerja": null,
+      "keunggulan": [],
+      "kelemahan_atau_risiko": [],
+      "keunikan": null,
+      "tim_atau_backer_disebutkan": null,
+      "website": "https://www.zama.org",
+      "twitter": "zama",
+      "top10_wallet_konsentrasi_pct": null,
+      "catatan": "Breakdown holder institusi vs retail TIDAK tersedia lewat API gratis untuk token seukuran ini \u2014 kalau butuh data ini, harus riset manual langsung ke block explorer atau laporan proyek."
+    }
+  },
+  {
+    "run_timestamp": "2026-09-25T23:24:36.672171+00:00",
+    "token_symbol": "PNKSTR",
+    "coingecko_id": "punkstrategy",
+    "defillama_slug": null,
+    "network": "eth",
+    "contract_address": "0xc50673edb3a7b94e8cad8a7d4e0cd68864e33edf",
+    "age_days": 368,
+    "total_skor_0_20": 5.75,
+    "total_skor_persen": 28.7,
+    "factor_scores": {
+      "value_accrual": 2,
+      "revenue": 5,
+      "market_dominance": 17,
+      "tokenomics": 0,
+      "utility": 0,
+      "governance": 1.0,
+      "onchain_activity": 20.0,
+      "data_transparency": 14
+    },
+    "factor_breakdown": {
+      "value_accrual": {
+        "konsistensi_mekanisme": 2,
+        "skala_dampak": 0,
+        "buyback_yield_tahunan_pct": 0
+      },
+      "revenue": {
+        "price_to_fee_ratio": null,
+        "skala_revenue": 0,
+        "tren_growth_pct_30d": 0,
+        "tren_pertumbuhan": 5
+      },
+      "market_dominance": {
+        "rank": 1,
+        "total_kompetitor": 1,
+        "rank_percentile": 12,
+        "trend_share": 5
+      },
+      "tokenomics": {
+        "skor_0_20": 0,
+        "alasan": "Gagal memanggil Gemini API (HTTPError, HTTP 404)"
+      },
+      "utility": {
+        "skor_0_20": 0,
+        "alasan": "Gagal memanggil Gemini API (HTTPError, HTTP 404)"
+      },
+      "governance": {
+        "aktivitas_voting": 0,
+        "desentralisasi": 1,
+        "raw_skor_sebelum_multiplier": 1,
+        "age_multiplier": 1.0
+      },
+      "onchain_activity": {
+        "kualitas_volume": 10,
+        "retensi": 10,
+        "retensi_pct": 100,
+        "wash_trading_multiple_of_category_avg": 0.0,
+        "raw_skor_sebelum_multiplier": 20,
+        "age_multiplier": 1.0
+      },
+      "data_transparency": {
+        "claim_vs_onchain_diff_pct": null,
+        "indexed_on_defillama": false,
+        "has_public_explorer": true
+      }
+    },
+    "confidence": {
+      "value_accrual": "Insufficient",
+      "revenue": "Insufficient",
+      "market_dominance": "Insufficient",
+      "governance": "Insufficient",
+      "onchain_activity": "Insufficient",
+      "tokenomics": "rendah",
+      "utility": "rendah",
+      "data_transparency": "Confirmed"
+    },
+    "why_on_radar": {
+      "market_cap_usd": null,
+      "rank_kategori": null,
+      "total_kompetitor_sekategori": null,
+      "revenue_tahunan_estimasi_usd": null,
+      "tvl_usd": null,
+      "network": "eth",
+      "contract_address": "0xc50673edb3a7b94e8cad8a7d4e0cd68864e33edf",
+      "ringkasan": "",
+      "mekanisme_kerja": null,
+      "keunggulan": [],
+      "kelemahan_atau_risiko": [],
+      "keunikan": null,
+      "tim_atau_backer_disebutkan": null,
+      "website": "https://www.punkstrategy.fun",
+      "twitter": "token_works",
+      "top10_wallet_konsentrasi_pct": null,
+      "catatan": "Tidak ada whitepaper, docs, maupun deskripsi resmi yang ditemukan untuk token ini di GeckoTerminal maupun CoinGecko \u2014 kemungkinan proyek belum melengkapi metadata publiknya. Ini sendiri sinyal yang perlu diwaspadai (transparansi rendah), bukan error di screener."
+    }
+  },
+  {
+    "run_timestamp": "2026-09-25T23:24:44.391159+00:00",
+    "token_symbol": "WOCT",
+    "coingecko_id": "octra",
+    "defillama_slug": null,
+    "network": "eth",
+    "contract_address": "0x4647e1fe715c9e23959022c2416c71867f5a6e80",
+    "age_days": 158,
+    "total_skor_0_20": 5.42,
+    "total_skor_persen": 27.1,
+    "factor_scores": {
+      "value_accrual": 2,
+      "revenue": 5,
+      "market_dominance": 17,
+      "tokenomics": 0,
+      "utility": 0,
+      "governance": 0.7,
+      "onchain_activity": 14.0,
+      "data_transparency": 14
+    },
+    "factor_breakdown": {
+      "value_accrual": {
+        "konsistensi_mekanisme": 2,
+        "skala_dampak": 0,
+        "buyback_yield_tahunan_pct": 0
+      },
+      "revenue": {
+        "price_to_fee_ratio": null,
+        "skala_revenue": 0,
+        "tren_growth_pct_30d": 0,
+        "tren_pertumbuhan": 5
+      },
+      "market_dominance": {
+        "rank": 1,
+        "total_kompetitor": 1,
+        "rank_percentile": 12,
+        "trend_share": 5
+      },
+      "tokenomics": {
+        "skor_0_20": 0,
+        "alasan": "Gagal memanggil Gemini API (HTTPError, HTTP 404)"
+      },
+      "utility": {
+        "skor_0_20": 0,
+        "alasan": "Gagal memanggil Gemini API (HTTPError, HTTP 404)"
+      },
+      "governance": {
+        "aktivitas_voting": 0,
+        "desentralisasi": 1,
+        "raw_skor_sebelum_multiplier": 1,
+        "age_multiplier": 0.7
+      },
+      "onchain_activity": {
+        "kualitas_volume": 10,
+        "retensi": 10,
+        "retensi_pct": 100,
+        "wash_trading_multiple_of_category_avg": 0.0,
+        "raw_skor_sebelum_multiplier": 20,
+        "age_multiplier": 0.7
+      },
+      "data_transparency": {
+        "claim_vs_onchain_diff_pct": null,
+        "indexed_on_defillama": false,
+        "has_public_explorer": true
+      }
+    },
+    "confidence": {
+      "value_accrual": "Insufficient",
+      "revenue": "Insufficient",
+      "market_dominance": "Insufficient",
+      "governance": "Insufficient",
+      "onchain_activity": "Insufficient",
+      "tokenomics": "rendah",
+      "utility": "rendah",
+      "data_transparency": "Confirmed"
+    },
+    "why_on_radar": {
+      "market_cap_usd": null,
+      "rank_kategori": null,
+      "total_kompetitor_sekategori": null,
+      "revenue_tahunan_estimasi_usd": null,
+      "tvl_usd": null,
+      "network": "eth",
+      "contract_address": "0x4647e1fe715c9e23959022c2416c71867f5a6e80",
+      "ringkasan": "Octra is an FHE blockchain network with support for isolated execution environments. The majority of the codebase is developed in languages such as OCaml, Rust, and C++. Most of the code will be open and available for you to use as you see fit.",
+      "mekanisme_kerja": null,
+      "keunggulan": [],
+      "kelemahan_atau_risiko": [],
+      "keunikan": null,
+      "tim_atau_backer_disebutkan": null,
+      "website": "https://octra.org",
+      "twitter": "octra",
+      "top10_wallet_konsentrasi_pct": null,
+      "catatan": "Breakdown holder institusi vs retail TIDAK tersedia lewat API gratis untuk token seukuran ini \u2014 kalau butuh data ini, harus riset manual langsung ke block explorer atau laporan proyek."
+    }
+  },
+  {
+    "run_timestamp": "2026-09-25T23:24:58.447387+00:00",
+    "token_symbol": "UPEG",
+    "coingecko_id": "unipeg",
+    "defillama_slug": null,
+    "network": "eth",
+    "contract_address": "0x44b28991b167582f18ba0259e0173176ca125505",
+    "age_days": 163,
+    "total_skor_0_20": 5.42,
+    "total_skor_persen": 27.1,
+    "factor_scores": {
+      "value_accrual": 2,
+      "revenue": 5,
+      "market_dominance": 17,
+      "tokenomics": 0,
+      "utility": 0,
+      "governance": 0.7,
+      "onchain_activity": 14.0,
+      "data_transparency": 14
+    },
+    "factor_breakdown": {
+      "value_accrual": {
+        "konsistensi_mekanisme": 2,
+        "skala_dampak": 0,
+        "buyback_yield_tahunan_pct": 0
+      },
+      "revenue": {
+        "price_to_fee_ratio": null,
+        "skala_revenue": 0,
+        "tren_growth_pct_30d": 0,
+        "tren_pertumbuhan": 5
+      },
+      "market_dominance": {
+        "rank": 1,
+        "total_kompetitor": 1,
+        "rank_percentile": 12,
+        "trend_share": 5
+      },
+      "tokenomics": {
+        "skor_0_20": 0,
+        "alasan": "Tidak ada teks whitepaper yang berhasil di-scrape"
+      },
+      "utility": {
+        "skor_0_20": 0,
+        "alasan": "Tidak ada teks whitepaper yang berhasil di-scrape"
+      },
+      "governance": {
+        "aktivitas_voting": 0,
+        "desentralisasi": 1,
+        "raw_skor_sebelum_multiplier": 1,
+        "age_multiplier": 0.7
+      },
+      "onchain_activity": {
+        "kualitas_volume": 10,
+        "retensi": 10,
+        "retensi_pct": 100,
+        "wash_trading_multiple_of_category_avg": 0.0,
+        "raw_skor_sebelum_multiplier": 20,
+        "age_multiplier": 0.7
+      },
+      "data_transparency": {
+        "claim_vs_onchain_diff_pct": null,
+        "indexed_on_defillama": false,
+        "has_public_explorer": true
+      }
+    },
+    "confidence": {
+      "value_accrual": "Insufficient",
+      "revenue": "Insufficient",
+      "market_dominance": "Insufficient",
+      "governance": "Insufficient",
+      "onchain_activity": "Insufficient",
+      "tokenomics": "Insufficient",
+      "utility": "Insufficient",
+      "data_transparency": "Confirmed"
+    },
+    "why_on_radar": {
+      "market_cap_usd": null,
+      "rank_kategori": null,
+      "total_kompetitor_sekategori": null,
+      "revenue_tahunan_estimasi_usd": null,
+      "tvl_usd": null,
+      "network": "eth",
+      "contract_address": "0x44b28991b167582f18ba0259e0173176ca125505",
+      "ringkasan": null,
+      "mekanisme_kerja": null,
+      "keunggulan": [],
+      "kelemahan_atau_risiko": [],
+      "keunikan": null,
+      "tim_atau_backer_disebutkan": null,
+      "website": null,
+      "twitter": null,
+      "top10_wallet_konsentrasi_pct": null,
+      "catatan": "Tidak ada whitepaper, docs, maupun deskripsi resmi yang ditemukan untuk token ini di GeckoTerminal maupun CoinGecko \u2014 kemungkinan proyek belum melengkapi metadata publiknya. Ini sendiri sinyal yang perlu diwaspadai (transparansi rendah), bukan error di screener."
+    }
+  },
+  {
+    "run_timestamp": "2026-09-25T23:25:07.733416+00:00",
+    "token_symbol": "USDE",
+    "coingecko_id": "ethena-usde",
+    "defillama_slug": null,
+    "network": "eth",
+    "contract_address": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+    "age_days": 359,
+    "total_skor_0_20": 5.58,
+    "total_skor_persen": 27.9,
+    "factor_scores": {
+      "value_accrual": 2,
+      "revenue": 5,
+      "market_dominance": 17,
+      "tokenomics": 0,
+      "utility": 0,
+      "governance": 0.85,
+      "onchain_activity": 17.0,
+      "data_transparency": 14
+    },
+    "factor_breakdown": {
+      "value_accrual": {
+        "konsistensi_mekanisme": 2,
+        "skala_dampak": 0,
+        "buyback_yield_tahunan_pct": 0
+      },
+      "revenue": {
+        "price_to_fee_ratio": null,
+        "skala_revenue": 0,
+        "tren_growth_pct_30d": 0,
+        "tren_pertumbuhan": 5
+      },
+      "market_dominance": {
+        "rank": 1,
+        "total_kompetitor": 1,
+        "rank_percentile": 12,
+        "trend_share": 5
+      },
+      "tokenomics": {
+        "skor_0_20": 0,
+        "alasan": "Gagal memanggil Gemini API (HTTPError, HTTP 404)"
+      },
+      "utility": {
+        "skor_0_20": 0,
+        "alasan": "Gagal memanggil Gemini API (HTTPError, HTTP 404)"
+      },
+      "governance": {
+        "aktivitas_voting": 0,
+        "desentralisasi": 1,
+        "raw_skor_sebelum_multiplier": 1,
+        "age_multiplier": 0.85
+      },
+      "onchain_activity": {
+        "kualitas_volume": 10,
+        "retensi": 10,
+        "retensi_pct": 100,
+        "wash_trading_multiple_of_category_avg": 0.0,
+        "raw_skor_sebelum_multiplier": 20,
+        "age_multiplier": 0.85
+      },
+      "data_transparency": {
+        "claim_vs_onchain_diff_pct": null,
+        "indexed_on_defillama": false,
+        "has_public_explorer": true
+      }
+    },
+    "confidence": {
+      "value_accrual": "Insufficient",
+      "revenue": "Insufficient",
+      "market_dominance": "Insufficient",
+      "governance": "Insufficient",
+      "onchain_activity": "Insufficient",
+      "tokenomics": "rendah",
+      "utility": "rendah",
+      "data_transparency": "Confirmed"
+    },
+    "why_on_radar": {
+      "market_cap_usd": null,
+      "rank_kategori": null,
+      "total_kompetitor_sekategori": null,
+      "revenue_tahunan_estimasi_usd": null,
+      "tvl_usd": null,
+      "network": "eth",
+      "contract_address": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+      "ringkasan": "Ethena is a delta-hedged synthetic dollar with native crypto yield derived from staking and perpetual funding rate",
+      "mekanisme_kerja": null,
+      "keunggulan": [],
+      "kelemahan_atau_risiko": [],
+      "keunikan": null,
+      "tim_atau_backer_disebutkan": null,
+      "website": "https://app.ethena.fi",
+      "twitter": "ethena_labs",
+      "top10_wallet_konsentrasi_pct": null,
+      "catatan": "Breakdown holder institusi vs retail TIDAK tersedia lewat API gratis untuk token seukuran ini \u2014 kalau butuh data ini, harus riset manual langsung ke block explorer atau laporan proyek."
+    }
+  },
+  {
+    "run_timestamp": "2026-09-25T23:25:15.290138+00:00",
+    "token_symbol": "CHIP",
+    "coingecko_id": "chip-2",
+    "defillama_slug": null,
+    "network": "arbitrum",
+    "contract_address": "0x0c1c1c109fe34733fca54b82d7b46b75cfb71f6e",
+    "age_days": 157,
+    "total_skor_0_20": 5.42,
+    "total_skor_persen": 27.1,
+    "factor_scores": {
+      "value_accrual": 2,
+      "revenue": 5,
+      "market_dominance": 17,
+      "tokenomics": 0,
+      "utility": 0,
+      "governance": 0.7,
+      "onchain_activity": 14.0,
+      "data_transparency": 14
+    },
+    "factor_breakdown": {
+      "value_accrual": {
+        "konsistensi_mekanisme": 2,
+        "skala_dampak": 0,
+        "buyback_yield_tahunan_pct": 0
+      },
+      "revenue": {
+        "price_to_fee_ratio": null,
+        "skala_revenue": 0,
+        "tren_growth_pct_30d": 0,
+        "tren_pertumbuhan": 5
+      },
+      "market_dominance": {
+        "rank": 1,
+        "total_kompetitor": 1,
+        "rank_percentile": 12,
+        "trend_share": 5
+      },
+      "tokenomics": {
+        "skor_0_20": 0,
+        "alasan": "Gagal memanggil Gemini API (HTTPError, HTTP 404)"
+      },
+      "utility": {
+        "skor_0_20": 0,
+        "alasan": "Gagal memanggil Gemini API (HTTPError, HTTP 404)"
+      },
+      "governance": {
+        "aktivitas_voting": 0,
+        "desentralisasi": 1,
+        "raw_skor_sebelum_multiplier": 1,
+        "age_multiplier": 0.7
+      },
+      "onchain_activity": {
+        "kualitas_volume": 10,
+        "retensi": 10,
+        "retensi_pct": 100,
+        "wash_trading_multiple_of_category_avg": 0.0,
+        "raw_skor_sebelum_multiplier": 20,
+        "age_multiplier": 0.7
+      },
+      "data_transparency": {
+        "claim_vs_onchain_diff_pct": null,
+        "indexed_on_defillama": false,
+        "has_public_explorer": true
+      }
+    },
+    "confidence": {
+      "value_accrual": "Insufficient",
+      "revenue": "Insufficient",
+      "market_dominance": "Insufficient",
+      "governance": "Insufficient",
+      "onchain_activity": "Insufficient",
+      "tokenomics": "rendah",
+      "utility": "rendah",
+      "data_transparency": "Confirmed"
+    },
+    "why_on_radar": {
+      "market_cap_usd": null,
+      "rank_kategori": null,
+      "total_kompetitor_sekategori": null,
+      "revenue_tahunan_estimasi_usd": null,
+      "tvl_usd": null,
+      "network": "arbitrum",
+      "contract_address": "0x0c1c1c109fe34733fca54b82d7b46b75cfb71f6e",
+      "ringkasan": "",
+      "mekanisme_kerja": null,
+      "keunggulan": [],
+      "kelemahan_atau_risiko": [],
+      "keunikan": null,
+      "tim_atau_backer_disebutkan": null,
+      "website": "https://usd.ai",
+      "twitter": "USDai_Official",
+      "top10_wallet_konsentrasi_pct": null,
+      "catatan": "Tidak ada whitepaper, docs, maupun deskripsi resmi yang ditemukan untuk token ini di GeckoTerminal maupun CoinGecko \u2014 kemungkinan proyek belum melengkapi metadata publiknya. Ini sendiri sinyal yang perlu diwaspadai (transparansi rendah), bukan error di screener."
+    }
+  },
+  {
+    "run_timestamp": "2026-09-25T23:25:25.696101+00:00",
+    "token_symbol": "GMX",
+    "coingecko_id": "gmx",
+    "defillama_slug": null,
+    "network": "arbitrum",
+    "contract_address": "0xfc5a1a6eb076a2c7ad06ed22c90d7e710e35ad0a",
+    "age_days": 198,
+    "total_skor_0_20": 5.58,
+    "total_skor_persen": 27.9,
+    "factor_scores": {
+      "value_accrual": 2,
+      "revenue": 5,
+      "market_dominance": 17,
+      "tokenomics": 0,
+      "utility": 0,
+      "governance": 0.85,
+      "onchain_activity": 17.0,
+      "data_transparency": 14
+    },
+    "factor_breakdown": {
+      "value_accrual": {
+        "konsistensi_mekanisme": 2,
+        "skala_dampak": 0,
+        "buyback_yield_tahunan_pct": 0
+      },
+      "revenue": {
+        "price_to_fee_ratio": null,
+        "skala_revenue": 0,
+        "tren_growth_pct_30d": 0,
+        "tren_pertumbuhan": 5
+      },
+      "market_dominance": {
+        "rank": 1,
+        "total_kompetitor": 1,
+        "rank_percentile": 12,
+        "trend_share": 5
+      },
+      "tokenomics": {
+        "skor_0_20": 0,
+        "alasan": "Gagal memanggil Gemini API (HTTPError, HTTP 404)"
+      },
+      "utility": {
+        "skor_0_20": 0,
+        "alasan": "Gagal memanggil Gemini API (HTTPError, HTTP 404)"
+      },
+      "governance": {
+        "aktivitas_voting": 0,
+        "desentralisasi": 1,
+        "raw_skor_sebelum_multiplier": 1,
+        "age_multiplier": 0.85
+      },
+      "onchain_activity": {
+        "kualitas_volume": 10,
+        "retensi": 10,
+        "retensi_pct": 100,
+        "wash_trading_multiple_of_category_avg": 0.0,
+        "raw_skor_sebelum_multiplier": 20,
+        "age_multiplier": 0.85
+      },
+      "data_transparency": {
+        "claim_vs_onchain_diff_pct": null,
+        "indexed_on_defillama": false,
+        "has_public_explorer": true
+      }
+    },
+    "confidence": {
+      "value_accrual": "Insufficient",
+      "revenue": "Insufficient",
+      "market_dominance": "Insufficient",
+      "governance": "Insufficient",
+      "onchain_activity": "Insufficient",
+      "tokenomics": "rendah",
+      "utility": "rendah",
+      "data_transparency": "Confirmed"
+    },
+    "why_on_radar": {
+      "market_cap_usd": null,
+      "rank_kategori": null,
+      "total_kompetitor_sekategori": null,
+      "revenue_tahunan_estimasi_usd": null,
+      "tvl_usd": null,
+      "network": "arbitrum",
+      "contract_address": "0xfc5a1a6eb076a2c7ad06ed22c90d7e710e35ad0a",
+      "ringkasan": "GMX is a leading permissionless onchain exchange, enabling you to trade 70+ assets with up to 100x leverage from your self-custody wallet. The DEX is live on Arbitrum, Avalanche, and Solana, and in the process of enabling multichain access from all popular EVM blockchains. Trading on GMX is facilitated by isolated GM pools and capital-efficient GLV vaults, enabling anyone to provide liquidity and earn fees. ",
+      "mekanisme_kerja": null,
+      "keunggulan": [],
+      "kelemahan_atau_risiko": [],
+      "keunikan": null,
+      "tim_atau_backer_disebutkan": null,
+      "website": "https://gmx.io/#/?ref=coingecko",
+      "twitter": "GMX_IO",
+      "top10_wallet_konsentrasi_pct": null,
+      "catatan": "Breakdown holder institusi vs retail TIDAK tersedia lewat API gratis untuk token seukuran ini \u2014 kalau butuh data ini, harus riset manual langsung ke block explorer atau laporan proyek."
+    }
   }
 ]
