@@ -14,10 +14,18 @@ _session.headers.update({"User-Agent": "personal-token-screener/0.1"})
 
 
 def _get(url: str, params: dict | None = None, retries: int = 3):
-    """GET dengan retry sederhana — API gratis kadang rate-limit/timeout."""
+    """GET dengan retry sederhana — API gratis kadang rate-limit/timeout.
+
+    404 sengaja TIDAK di-retry dan TIDAK di-raise — untuk lookup semacam
+    'apakah token ini terdaftar di CoinGecko', 404 itu jawaban yang sah
+    (token belum terindeks), bukan kegagalan sistem. Meng-crash-kan seluruh
+    batch cuma gara-gara satu token belum terindeks itu berlebihan.
+    """
     for attempt in range(retries):
         try:
             resp = _session.get(url, params=params, timeout=15)
+            if resp.status_code == 404:
+                return None
             if resp.status_code == 429:
                 time.sleep(2 ** attempt)
                 continue
