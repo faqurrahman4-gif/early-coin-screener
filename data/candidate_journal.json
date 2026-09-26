@@ -1568,5 +1568,295 @@
     "volume_24h_usd": "0.001210287315",
     "reserve_usd": "3600.556",
     "first_seen_at": "2026-09-25T23:22:11.529973+00:00"
+  },
+  "eth:0x699896f0d2cd31c3cf2e867654e95936c53d7081": {
+    "network": "eth",
+    "pool_address": "0x23a944898b60b15f12a44ea8a6fd46722e8d1274a26e1f054bc6c598c685a738",
+    "pool_created_at": "2026-09-26T00:08:23Z",
+    "base_token_symbol": "Ackbar",
+    "base_token_address": "0x699896f0d2cd31c3cf2e867654e95936c53d7081",
+    "volume_24h_usd": "590.66007852",
+    "reserve_usd": null,
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "eth:0x6cc1588da49c1b74143ebc323dac4bffbb7fd50d": {
+    "network": "eth",
+    "pool_address": "0x8975b97ae81b1f40c91f8934a257a2067cff9916",
+    "pool_created_at": "2026-09-26T00:05:59Z",
+    "base_token_symbol": "AAVE",
+    "base_token_address": "0x6cc1588da49c1b74143ebc323dac4bffbb7fd50d",
+    "volume_24h_usd": "957.4193007",
+    "reserve_usd": "4607.2335",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "eth:0xa6707a8a00e94d1834ccda2856c9cf948941078d": {
+    "network": "eth",
+    "pool_address": "0x23d980c40dcbde2b73b2089661ff051089c542ed459698d6b733934dfdd062bc",
+    "pool_created_at": "2026-09-26T00:03:23Z",
+    "base_token_symbol": "xmd",
+    "base_token_address": "0xa6707a8a00e94d1834ccda2856c9cf948941078d",
+    "volume_24h_usd": "50.8797943201",
+    "reserve_usd": "0.122709753695071",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "eth:0x96b79168dfbc3a53c0e74b1e5a137aa76f2321af": {
+    "network": "eth",
+    "pool_address": "0xb0ac555441b7e9961561d3c6d2ba35253c737cfab2b6581824966786c2be7aac",
+    "pool_created_at": "2026-09-26T00:02:47Z",
+    "base_token_symbol": "EIP-4444",
+    "base_token_address": "0x96b79168dfbc3a53c0e74b1e5a137aa76f2321af",
+    "volume_24h_usd": "538.098",
+    "reserve_usd": "0.0000000000000834147963050378",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "eth:0x9866b8ce4613d69feb3a043451b7d6232195d40a": {
+    "network": "eth",
+    "pool_address": "0x457932997f840bacb64ca06c3f4fa038e17037565868ad9882c4ab5257eb08a1",
+    "pool_created_at": "2026-09-26T00:01:47Z",
+    "base_token_symbol": "SANIC",
+    "base_token_address": "0x9866b8ce4613d69feb3a043451b7d6232195d40a",
+    "volume_24h_usd": "6672.0359285001",
+    "reserve_usd": "14801.2357",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "eth:0xec53bf9167f50cdeb3ae105f56099aaab9061f83": {
+    "network": "eth",
+    "pool_address": "0xd09994d294319fd8107278dc09ece72253ae1d98",
+    "pool_created_at": "2026-09-25T23:50:11Z",
+    "base_token_symbol": "EIGEN",
+    "base_token_address": "0xec53bf9167f50cdeb3ae105f56099aaab9061f83",
+    "volume_24h_usd": "0.6036082692",
+    "reserve_usd": "0.000001086251067",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "eth:0xf51f6dddfc10f54b381e99f3a8cf01d8f33a36cc": {
+    "network": "eth",
+    "pool_address": "0x924441eac705e068cdf0f6b7d9404eeb566ce749",
+    "pool_created_at": "2026-09-25T23:43:11Z",
+    "base_token_symbol": "CLLMT",
+    "base_token_address": "0xf51f6dddfc10f54b381e99f3a8cf01d8f33a36cc",
+    "volume_24h_usd": "1432.471439555",
+    "reserve_usd": "0.001663038913",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "eth:0x9d82e7d46cbb48a70b2509d4fb6c8ed4cbd02e97": {
+    "network": "eth",
+    "pool_address": "0x28cbcf7ba2f78744cb12cf75122408d2d170d1723f2c676d60c345232330dadf",
+    "pool_created_at": "2026-09-25T23:37:11Z",
+    "base_token_symbol": "MOON",
+    "base_token_address": "0x9d82e7d46cbb48a70b2509d4fb6c8ed4cbd02e97",
+    "volume_24h_usd": "261.0949558478",
+    "reserve_usd": "0.0",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "eth:0x5a7d320a5bca38431e4a03ae9566fd17b50b48ca": {
+    "network": "eth",
+    "pool_address": "0x7c75201168d1fbecf8c18d90a8c96202853f29a2",
+    "pool_created_at": "2026-09-25T23:24:59Z",
+    "base_token_symbol": "FLUID",
+    "base_token_address": "0x5a7d320a5bca38431e4a03ae9566fd17b50b48ca",
+    "volume_24h_usd": "1256.2019079978",
+    "reserve_usd": "0.001405224788",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "bsc:0xf3cf96d4cb178727b9d56221285d7b17f69bffff": {
+    "network": "bsc",
+    "pool_address": "0xf3cf96d4cb178727b9d56221285d7b17f69bffff",
+    "pool_created_at": "2026-09-26T00:14:54Z",
+    "base_token_symbol": "BSTRONG",
+    "base_token_address": "0xf3cf96d4cb178727b9d56221285d7b17f69bffff",
+    "volume_24h_usd": "0.001341276862",
+    "reserve_usd": "3604.3714956619",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "bsc:0xfaadada01414bc3fa0ad099bab0817fab9497777": {
+    "network": "bsc",
+    "pool_address": "0xf46d63988dddf14236d3b370e79aefccf1db5346",
+    "pool_created_at": "2026-09-26T00:13:42Z",
+    "base_token_symbol": "xStocks",
+    "base_token_address": "0xfaadada01414bc3fa0ad099bab0817fab9497777",
+    "volume_24h_usd": "1461.2074058971",
+    "reserve_usd": "10979.4125",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "bsc:0x6ee0ee779e02d4fb635348727d282e91fc7cffff": {
+    "network": "bsc",
+    "pool_address": "0x6ee0ee779e02d4fb635348727d282e91fc7cffff",
+    "pool_created_at": "2026-09-26T00:12:36Z",
+    "base_token_symbol": "xStocks",
+    "base_token_address": "0x6ee0ee779e02d4fb635348727d282e91fc7cffff",
+    "volume_24h_usd": "0.001258929695",
+    "reserve_usd": "3604.8815881999",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "bsc:0x1f3a945125611644e47740f60ffe8c431f19ffff": {
+    "network": "bsc",
+    "pool_address": "0x1f3a945125611644e47740f60ffe8c431f19ffff",
+    "pool_created_at": "2026-09-26T00:12:31Z",
+    "base_token_symbol": "CS2",
+    "base_token_address": "0x1f3a945125611644e47740f60ffe8c431f19ffff",
+    "volume_24h_usd": "0.001211893215",
+    "reserve_usd": "3604.9156",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "bsc:0x3b578d3749fb8efddec6ffe3d3769dcb4505d8e2": {
+    "network": "bsc",
+    "pool_address": "0xe0aac9434455a51b4ff4d54e09fc2bc9d99feecc",
+    "pool_created_at": "2026-09-26T00:12:05Z",
+    "base_token_symbol": "TALIS",
+    "base_token_address": "0x3b578d3749fb8efddec6ffe3d3769dcb4505d8e2",
+    "volume_24h_usd": "19374.5963939337",
+    "reserve_usd": "17256.2382",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "bsc:0xbfa03e7c5505e926b7ad6c29b17154d7937bd8e2": {
+    "network": "bsc",
+    "pool_address": "0x5250585d5a607fc74bfd5fc4b64743d3c8e2fe79",
+    "pool_created_at": "2026-09-26T00:11:33Z",
+    "base_token_symbol": "TALIS",
+    "base_token_address": "0xbfa03e7c5505e926b7ad6c29b17154d7937bd8e2",
+    "volume_24h_usd": "22059.7404045391",
+    "reserve_usd": "40717.0215",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "bsc:0x436c80b48b95cbcba3e109083b7d9d550086ca34": {
+    "network": "bsc",
+    "pool_address": "0x4b5057534e28bffe17921f2e2a20b61f403781d2",
+    "pool_created_at": "2026-09-26T00:09:22Z",
+    "base_token_symbol": "BSYN",
+    "base_token_address": "0x436c80b48b95cbcba3e109083b7d9d550086ca34",
+    "volume_24h_usd": "40.7327451306",
+    "reserve_usd": "2058.3929",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "bsc:0x7075caa3fbc53493bb8236aa9e640adfe386ffff": {
+    "network": "bsc",
+    "pool_address": "0x7075caa3fbc53493bb8236aa9e640adfe386ffff",
+    "pool_created_at": "2026-09-26T00:09:13Z",
+    "base_token_symbol": "DEBTDOG",
+    "base_token_address": "0x7075caa3fbc53493bb8236aa9e640adfe386ffff",
+    "volume_24h_usd": "0.001259205034",
+    "reserve_usd": "3604.8692",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "bsc:0x08c81d744de28f73a8c926f1f062f4f734e3ffff": {
+    "network": "bsc",
+    "pool_address": "0x08c81d744de28f73a8c926f1f062f4f734e3ffff",
+    "pool_created_at": "2026-09-26T00:09:00Z",
+    "base_token_symbol": "Cr\u00e9mieux",
+    "base_token_address": "0x08c81d744de28f73a8c926f1f062f4f734e3ffff",
+    "volume_24h_usd": "0.001265393503",
+    "reserve_usd": "3604.8692",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "bsc:0xe7ccbfa43f0a6c76f709a3677474913b14377777": {
+    "network": "bsc",
+    "pool_address": "0x62d733a0c861b62c928da851b7d7974c29ac36e5",
+    "pool_created_at": "2026-09-26T00:08:54Z",
+    "base_token_symbol": "urmom",
+    "base_token_address": "0xe7ccbfa43f0a6c76f709a3677474913b14377777",
+    "volume_24h_usd": "14694.0654515682",
+    "reserve_usd": "16648.0162",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "bsc:0x14014a91d6ed331398935ebbae1719bd54e3f910": {
+    "network": "bsc",
+    "pool_address": "0xf4ba08a9ca1244ccd0e1ea5e7f2ac90926a3d863",
+    "pool_created_at": "2026-09-26T00:08:52Z",
+    "base_token_symbol": "RIH",
+    "base_token_address": "0x14014a91d6ed331398935ebbae1719bd54e3f910",
+    "volume_24h_usd": "1367.5100895442",
+    "reserve_usd": "10863.2653",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "bsc:0xacf346dba359e6d2388e935f4497f91c02929777": {
+    "network": "bsc",
+    "pool_address": "0x4f54fde33c614705c82445e45f2689d214a0da1c46040da490b8b01d77affa12",
+    "pool_created_at": "2026-09-26T00:08:38Z",
+    "base_token_symbol": "PIZZA",
+    "base_token_address": "0xacf346dba359e6d2388e935f4497f91c02929777",
+    "volume_24h_usd": "28914.7324427057",
+    "reserve_usd": "21993.4474298075",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "bsc:0x361a218022aab3f1edbbd0e9049574b070080329": {
+    "network": "bsc",
+    "pool_address": "0x250f494791bb43b48d81aa54974202a71ec36982",
+    "pool_created_at": "2026-09-26T00:07:50Z",
+    "base_token_symbol": "\ud83d\udc2f\u592a\u9633\u5e01",
+    "base_token_address": "0x361a218022aab3f1edbbd0e9049574b070080329",
+    "volume_24h_usd": "24060.0561966496",
+    "reserve_usd": "43767.5486",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "bsc:0xe5030a58dbb98b30eb081d4c3de354484fe94879": {
+    "network": "bsc",
+    "pool_address": "0xc074b82875cf17c7c52de4eda65cb3cdd55b8639",
+    "pool_created_at": "2026-09-26T00:06:48Z",
+    "base_token_symbol": "MOTAS",
+    "base_token_address": "0xe5030a58dbb98b30eb081d4c3de354484fe94879",
+    "volume_24h_usd": "2946.641998761",
+    "reserve_usd": "18490.3905",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "bsc:0xf78b401d87424b83aa5f8dac8361beba02dde457": {
+    "network": "bsc",
+    "pool_address": "0x83d2a8c1aaa8657737569bb0d88b9d4f8e68d38b",
+    "pool_created_at": "2026-09-26T00:06:41Z",
+    "base_token_symbol": "\ud83d\udcb8STOC",
+    "base_token_address": "0xf78b401d87424b83aa5f8dac8361beba02dde457",
+    "volume_24h_usd": "131493.008746307",
+    "reserve_usd": "88524.5299",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "bsc:0x6acb4f774b1a6a4afcb4659bc6db9e78d858608e": {
+    "network": "bsc",
+    "pool_address": "0x47cf5e44d1be7a214162cb33f83941b66a25fdf8",
+    "pool_created_at": "2026-09-26T00:06:21Z",
+    "base_token_symbol": "\u673a\u5668\u4eba\u94fe\ud83d\udc8e",
+    "base_token_address": "0x6acb4f774b1a6a4afcb4659bc6db9e78d858608e",
+    "volume_24h_usd": "91854.1964842013",
+    "reserve_usd": "114497.3337",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "bsc:0xcb137567b6f9ff1f15ec22ae3dad68ea61987777": {
+    "network": "bsc",
+    "pool_address": "0xd51dcf44c66e9716ff733f09ce77df6915d8e05d",
+    "pool_created_at": "2026-09-26T00:05:49Z",
+    "base_token_symbol": "\u5e01\u5b89\u751f",
+    "base_token_address": "0xcb137567b6f9ff1f15ec22ae3dad68ea61987777",
+    "volume_24h_usd": "10715.8318649465",
+    "reserve_usd": "0.1555",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "bsc:0xc3075347f41fc98d749962626c73c732653affff": {
+    "network": "bsc",
+    "pool_address": "0xc3075347f41fc98d749962626c73c732653affff",
+    "pool_created_at": "2026-09-26T00:05:45Z",
+    "base_token_symbol": "ROOT",
+    "base_token_address": "0xc3075347f41fc98d749962626c73c732653affff",
+    "volume_24h_usd": "0.001607139064",
+    "reserve_usd": "3605.9359",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "bsc:0x41bbb7414bbf7b1628ee3435ec476d50d009e777": {
+    "network": "bsc",
+    "pool_address": "0x827a288ca6304fed70d16700f035cbbb3b8e028a8be83a61cccd4c2e444a9a61",
+    "pool_created_at": "2026-09-26T00:05:29Z",
+    "base_token_symbol": "gas",
+    "base_token_address": "0x41bbb7414bbf7b1628ee3435ec476d50d009e777",
+    "volume_24h_usd": "19846.8512532497",
+    "reserve_usd": "58.0299724154808",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
+  },
+  "bsc:0xf50b5962f1d2d68c79d5014578bc51815cc9ffff": {
+    "network": "bsc",
+    "pool_address": "0xf50b5962f1d2d68c79d5014578bc51815cc9ffff",
+    "pool_created_at": "2026-09-26T00:05:04Z",
+    "base_token_symbol": "MTW",
+    "base_token_address": "0xf50b5962f1d2d68c79d5014578bc51815cc9ffff",
+    "volume_24h_usd": "0.001257957912",
+    "reserve_usd": "3605.9359",
+    "first_seen_at": "2026-09-26T00:15:34.283928+00:00"
   }
 }
